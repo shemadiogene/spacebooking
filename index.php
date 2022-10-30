@@ -37,7 +37,7 @@
                     <div class="row">
                       <div class="col-lg-8">
                         <div class="intro-body">
-                          <p class="intro-title-top"><?php //$intro['location'];?>Rwandan Deserved the Best
+                          <p class="intro-title-top"><?php //$intro['location'];?>Rwandan Deserve The Bests
                             <!-- <br> KG Paul VI</p> -->
                           <h2 class="intro-title mb-4">
                             <span class="color-b"><?php //$intro['rooms'];?> </span><?php //$intro['name'];?>Find space of desire
