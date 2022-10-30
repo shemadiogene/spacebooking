@@ -8,16 +8,15 @@
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+                You can find space of your business here we have spaces to buy and rent for better prices
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone</span> +250788890071</li>
+                  <span class="color-text-a">Phone</span> +250789223264</li>
                 <li class="color-a">
-                  <span class="color-text-a">Email </span> info@spacecompany.com</li>
+                  <span class="color-text-a">Email </span> info@spaceBooking.com</li>
               </ul>
             </div>
           </div>
