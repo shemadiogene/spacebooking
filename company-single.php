@@ -75,9 +75,7 @@
                   </div>
                   <div class="agent-content mb-3">
                     <p class="content-d color-text-a">
-                      Sed porttitor lectus nibh. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                      Vivamus suscipit tortor
-                      eget felis porttitor volutpat. Vivamus suscipit tortor eget felis porttitor volutpat.
+                     For mor information you can reach us on below infors
                     </p>
                     <div class="info-agents color-a">
                       <p>
@@ -133,7 +131,7 @@
           ?>
           <div class="col-md-12 section-t8">
             <div class="title-box-d">
-              <h3 class="title-d">Our Spaces (<?= $size;?>)</h3>
+              <h3 class="title-d">Our Spaces (<?= $size;?> m<sup>2</sup>)</h3>
             </div>
           </div>
           <div class="row property-grid grid">
@@ -156,7 +154,7 @@
                     <div class="col-md-4">
                       <div class="card-box-a card-shadow">
                         <div class="img-box-a">
-                          <img src="admin/media/spaceImages/<?= $fes['thumnail']?>" style="height:400px;" alt="" class="img-a img-fluid">
+                          <img src="admin/media/spaceImages/<?= $fes['thumnail']?>" style="height:400px;"width="600px" alt="" class="img-a img-fluid">
                         </div>
                         <div class="card-overlay">
                           <div class="card-overlay-a-content">
