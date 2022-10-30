@@ -237,11 +237,11 @@
                           </div>
                           <div class="card-body-d">
                             <p class="content-d color-text-a">
-                              Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                          For more information you can reach us on below infos
                             </p>
                             <div class="info-agents color-a">
                               <p>
-                                <strong>Phone: </strong> <?= $companies['comPhone'];?></p>
+                                <strong>Phone: </strong>+250<?= $companies['comPhone'];?></p>
                               <p>
                                 <strong>Email: </strong>  <?= $companies['comEmail'];?></p>
                             </div>
