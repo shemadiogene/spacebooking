@@ -83,9 +83,7 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  we have beautiful spaces to buy
                 </p>
               </div>
               <div class="card-footer-c">
