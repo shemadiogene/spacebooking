@@ -7,7 +7,7 @@ require_once("includes/db.php");
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin | Spaceco</title>
+  <title>Admin | SpaceBooking</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
@@ -82,7 +82,7 @@ require_once("includes/db.php");
                       
                       <div class="row">
                         <div class="form-group col-6">
-                          <input id="rooms" type="number" class="form-control" placeholder="Room" name="offRooms" autofocus>
+                          <input id="rooms" type="number" class="form-control" placeholder="Number of flows" name="offRooms" autofocus>
                         </div>
                         <div class="form-group col-6">
                             <div class="input-group">
@@ -104,6 +104,13 @@ require_once("includes/db.php");
                         <div class="form-group col-6">
                            <textarea name="descs" id="" placeholder="Description" cols="30" class="form-control" rows="3"></textarea>
                         </div>
+                        <div class="form-group col-12">
+                            <div class="custom-file">
+                                <input type="file" required name="thumbnails" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Attach Agreement file</label>
+                            </div>
+                        </div>
+                      </div>
                         <div class="form-group col-12">
                             <div class="custom-file">
                                 <input type="file" required name="thumbnails" class="custom-file-input" id="customFile">
@@ -159,7 +166,7 @@ require_once("includes/db.php");
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="">&copy Spececo</a></a>
+          <a href="">&copy Specebooking</a></a>
         </div>
         <div class="footer-right">
         </div>

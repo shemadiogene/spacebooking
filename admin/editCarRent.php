@@ -8,7 +8,7 @@ $id = $_GET['editCar'];
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin | Uratengamaye Kivu</title>
+  <title>SpaceBooking</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
@@ -261,7 +261,7 @@ $id = $_GET['editCar'];
       ?>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="">&copy Uratengamaye Kivu Ltd | Rwanda</a></a>
+          <a href="">&copy SpaceBooking | Rwanda</a></a>
         </div>
         <div class="footer-right">
         </div>

@@ -144,7 +144,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">Space Company</span> All Rights Reserved.
+              <span class="color-a">SpaceBooking</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">

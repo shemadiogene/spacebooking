@@ -489,7 +489,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="">SolveIT Intern</a></a>
+          <a href="">SpaceBooking</a></a>
         </div>
         <div class="footer-right">
         </div>

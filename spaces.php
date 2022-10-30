@@ -89,7 +89,7 @@
                                 <div class="card-overlay-a-content">
                                   <div class="card-header-a">
                                     <h2 class="card-title-a">
-                                      <a href="property-single?identification=<?= rand().uniqid()."!".$rows['id']."!".rand().uniqid().rand();?>"><?= $rows['rooms'];?> <?= $rows['name'];?>
+                                      <a href="property-single?identification=<?= rand().uniqid()."!".$rows['id']."!".rand().uniqid().rand();?>"> <?= $rows['name'];?>
                                         <br /> <small><?= $rows['location'];?></small></a><br>
                                         <a href="customers?ident=<?= rand().uniqid().rand()."!".$rows['id']."!".rand().uniqid().rand();?>" id="customers" class="btn btn-sm btn-outline-warning">Book</a>
                                     </h2>
@@ -116,7 +116,8 @@
                                       </li>
                                       <li>
                                         <h4 class="card-info-title">Price</h4>
-                                        <span><?= $rows['price'];?></span>
+                                        <span><?= $rows['price'];?> per m
+                                          <sup>2</sup></span>
                                       </li>
                                     </ul>
                                   </div>

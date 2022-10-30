@@ -7,7 +7,7 @@ require_once("includes/db.php");
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Admin | spaceco</title>
+  <title>Admin | spaceBooking</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="assets/css/app.min.css">
     <link rel="stylesheet" href="assets/bundles/datatables/datatables.min.css">
@@ -207,7 +207,7 @@ require_once("includes/db.php");
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="">&copy spaceco | Rwanda</a></a>
+          <a href="">&copy spaceBooking | Rwanda</a></a>
         </div>
         <div class="footer-right">
         </div>

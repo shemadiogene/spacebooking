@@ -29,7 +29,7 @@
             // if (mysqli_num_rows($ch)>0) {
             //   while ($intro = mysqli_fetch_array($ch)) {
           ?>
-            <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/about1.jpg)">
+            <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/backgra.jpg)">
               <div class="overlay overlay-a"></div>
               <div class="intro-content display-table">
                 <div class="table-cell">
@@ -43,7 +43,7 @@
                             <span class="color-b"><?php //$intro['rooms'];?> </span><?php //$intro['name'];?>Find space of desire
                             <!-- <br>Paul VI</h2> -->
                           <p class="intro-subtitle intro-price">
-                            <a href="#"><span class="price-a"><?php //$intro['status'];?>Find your | Affordable <?php //$intro['price'];?></span></a>
+                            <a href="spaces.php"><span class="price-a"><?php //$intro['status'];?>Find your | Affordable <?php //$intro['price'];?></span></a>
                           </p>
                         </div>
                       </div>
@@ -163,7 +163,7 @@
                           </div>
                           <div class="card-body-a">
                             <div class="price-box d-flex">
-                              <span class="price-a"><?= $row['status']?> | <?= $row['price']?></span>
+                              <span class="price-a"><?= $row['status']?> | $<?= $row['price']?></span>
                             </div>
                             <a href="property-single?identification=<?= rand().uniqid()."!".$row['id']."!".rand().uniqid().rand();?>" class="link-a">Click here to view
                               <span class="ion-ios-arrow-forward"></span>
@@ -183,7 +183,8 @@
                               </li>
                               <li>
                                 <h4 class="card-info-title">Price</h4>
-                                <span><?= $row['price'];?></span>
+                                <span>$<?= $row['price'];?> per m
+                                  <sup>2</sup></span>
                               </li>
                             </ul>
                           </div>

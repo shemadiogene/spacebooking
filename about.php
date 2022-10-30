@@ -28,7 +28,7 @@
         <div class="row">
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
-              <h1 class="title-single">We Provide Affordable Spaces And Offices</h1>
+              <h1 class="title-single">We Provide Affordable Spaces </h1>
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
@@ -53,7 +53,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="about-img-box">
-              <img src="assets/img/about1.jpg" alt="" class="img-fluid">
+              <img src="assets/img/backgra.jpg" alt="" class="img-fluid">
             </div>
             <div class="sinse-box">
               <h3 class="sinse-title">SpaceBooking
