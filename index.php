@@ -103,14 +103,12 @@
               <div class="card-header-c d-flex">
                 
                 <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Lend Spaces</h2>
+                  <h2 class="title-c">Rent Spaces</h2>
                 </div>
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  we have affordable spaces to lend for your business
                 </p>
               </div>
               <div class="card-footer-c">
