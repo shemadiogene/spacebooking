@@ -215,9 +215,7 @@
                 <div class="property-agent">
                   <h4 class="title-agent"><?= $fePro['name'];?></h4>
                   <p class="color-text-a">
-                    Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                    dui. Quisque velit nisi,
-                    pretium ut lacinia in, elementum id enim.
+                  <?= $fePro['descriptions'];?>
                   </p>
                   <ul class="list-unstyled">
                     <li class="d-flex justify-content-between">
