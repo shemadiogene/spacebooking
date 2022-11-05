@@ -6,10 +6,10 @@
   $findById = mysqli_query($conn,"SELECT *FROM offices WHERE id = '$offId'") or die(mysqli_error($conn));
   if (mysqli_num_rows($findById)<0) {
      ?>
-        <script>
-            window.location = "index";
-        </script>
-     <?php
+<script>
+  window.location = "index";
+</script>
+<?php
   }
   $fe = mysqli_fetch_array($findById);
   $comId = $fe['companyId'];
@@ -19,8 +19,98 @@
 
 <head>
   <?php include("inc/header.php");?>
-  
 </head>
+
+<style>
+  /* Credit Card */
+  .credit-card {
+    width: 360px;
+    height: 400px;
+    margin: 60px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, .10);
+  }
+
+  .form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #e1e8ee;
+  }
+
+  .form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+  }
+
+  /* Title */
+  .title {
+    font-size: 18px;
+    margin: 0;
+    color: #5e6977;
+  }
+
+  /* Common */
+  .card-number,
+  .cvv-input input,
+  .month select,
+  .year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+  }
+
+  .card-number,
+  .month select,
+  .year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+  }
+
+  .card-number,
+  .cvv-details,
+  .cvv-input input,
+  .month select,
+  .year select {
+    opacity: .7;
+    color: #86939e;
+  }
+
+  /* Card Number */
+  .card-number {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+  }
+
+
+
+  /* Card Verification Field */
+  .cvv-input input {
+    float: left;
+    width: 145px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: #fff;
+  }
+
+  .cvv-details {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+  }
+
+  .cvv-details p {
+    margin-top: 6px;
+  }
+</style>
 
 <body>
 
@@ -76,9 +166,9 @@
           </div> -->
           <div class="col-sm-12 section-t8">
             <div class="row">
-            
-            <div class="col-md-5 section-md-t3">
-            <img src="admin/media/spaceImages/<?= $fe['thumnail'];?>" alt="" class="img img-fluid">
+
+              <div class="col-md-5 section-md-t3">
+                <img src="admin/media/spaceImages/<?= $fe['thumnail'];?>" alt="" class="img img-fluid">
                 <!-- <div class="icon-box section-b2">
                 <div class="icon-box-icon">
                     <span class="ion-ios-paper-plane"></span>
@@ -154,59 +244,198 @@
                     </div>
                 </div>
                 </div> -->
-            </div>
+              </div>
               <div class="col-md-7">
                 <form method="POST" role="form">
                   <div class="row">
                     <div class="col-12">
-                        
-                        <?php
+
+                      <?php
                             include 'forms/reserve.php';
                             if (isset($_POST['sendMessage'])) {
                                 echo $msg;
                             }
                         ?>
                     </div>
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="cusNames" required class="form-control form-control-lg form-control-a" placeholder="Full Names" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                        <div class="validate"></div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Full names</label>
+                          <input style="font-size:12px;" type="text" name="cusNames" required
+                            class="form-control form-control-lg form-control-a" placeholder="Full Names"
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Email</label>
+                          <input style="font-size:12px;" type="email" name="cusEmail" required
+                            class="form-control form-control-lg form-control-a" placeholder="Email" data-rule="minlen:4"
+                            data-msg="">
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Phone</label>
+                          <input style="font-size:12px;" name="cusPhone" type="number" required
+                            class="form-control form-control-lg form-control-a" placeholder="Phone" data-rule="email"
+                            data-msg="">
+                          <div class="validate"></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input name="cusPhone" type="number" required class="form-control form-control-lg form-control-a" placeholder="Phone" data-rule="email" data-msg="Please enter a valid email">
-                        <div class="validate"></div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Location</label>
+                          <input style="font-size:12px;" type="text" name="cusNames" required
+                            class="form-control form-control-lg form-control-a" placeholder="Location"
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Floor</label>
+                          <input style="font-size:12px;" type="email" name="cusEmail" required
+                            class="form-control form-control-lg form-control-a" placeholder="Floor" data-rule="minlen:4"
+                            data-msg="">
+                          <div class="validate"></div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Dimension(area)</label>
+                          <input style="font-size:12px;" name="cusPhone" type="number" required
+                            class="form-control form-control-lg form-control-a" placeholder="Area" data-rule="email"
+                            data-msg="">
+                          <div class="validate"></div>
+                        </div>
                       </div>
                     </div>
 
-                    
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input type="email" name="cusEmail" required class="form-control form-control-lg form-control-a" placeholder="Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                        <div class="validate"></div>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="check in" class="form-control-label">Date</label>
+                          <input style="font-size:12px;" type="date" name="cusCheckin"
+                            class="form-control form-control-lg form-control-a" placeholder="Check in"
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                          <div class="validate"></div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input name="cusLocation" type="text" required class="form-control form-control-lg form-control-a" placeholder="Location" data-rule="email" data-msg="Please enter a valid email">
-                        <div class="validate"></div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="">Agreement</label>
+                          <input type="file" id="myfile" name="myfile">
+                          <div class="validate"></div>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="col-md-6 mb-3">
-                        <div class="form-group">
-                        <label for="check in" class="form-control-label">Check in</label>
-                        <input type="date" name="cusCheckin" class="form-control form-control-lg form-control-a" placeholder="Check in" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                        <div class="validate"></div>
+                    <div class="payment-details">
+                      <div class="container-fluid">
+                        <div style="font-size: 30px;
+                          font-weight: 600;" class="row">
+                          Payment details
                         </div>
+                        <div style="font-size: 20px;
+                          font-weight: 600;" class="row mt-4">
+                          Type of payments
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="form-group">
-                        <label for="check in" class="form-control-label">Check out</label>
-                        <input name="cusCheckout" type="date" class="form-control form-control-lg form-control-a" placeholder="Check out" data-rule="email" data-msg="Please enter a valid email">
-                        <div class="validate"></div>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <!-- momo payment info -->
+                        <div class="col-lg-6">
+                          <div class="form-header">
+                            <div class="row">
+                              <input type="radio" id="html" name="fav_language" value="HTML">
+                              <h4 class="title mt-1 mx-2">MOMO</h4>
+                              <img style="width: 56px;
+                                  margin-left: 8%;
+                                  height: 42px;
+                                  margin-top: -4%;
+                                  object-fit: cover;" src="img/unnamed.png" alt="">
+                            </div>
+                          </div>
+                          <div class="row mt-4">
+                            <div style="font-size:12px;" class="col-lg-5 mt-2">Phone number</div>
+                            <div class="col-lg-7">
+                              <input class="form-control" type="phone">
+                            </div>
+                          </div>
+
+                          <div class="row mt-4">
+                            <div style="font-size:12px;" class="col-lg-5 mt-2">Amount</div>
+                            <div class="col-lg-7">
+                              <input style="font-size:12px;" class="form-control" type="number" class="">
+                            </div>
+                          </div>
+                          <div class="row my-4">
+                            <div class="col-md-12 text-center">
+                              <button type="submit" class="btn btn-sm btn-flat btn-primary">Cancel</button>
+                              <button type="submit" name="sendMessage"
+                                class="btn btn-sm btn-flat btn-success">Deposit</button>
+                            </div>
+                          </div>
                         </div>
+                        <!-- credit card info -->
+                        <div class="col-lg-6">
+                          <div class="form-header">
+                            <div class="row">
+                              <input type="radio" id="html" name="fav_language" value="HTML">
+                              <h4 class="title mx-2 text-uppercase mt-1">Credit card</h4>
+                              <img style="width: 56px;
+                                  margin-left: 8%;
+                                  height: 42px;
+                                  margin-top: -4%;
+                                  object-fit: cover;" src="img/credit.jpg" alt="">
+                            </div> 
+                          </div>
+                          <div class="row mt-4">
+                            <div style="font-size:12px;" class="col-lg-5 mt-2">Card number</div>
+                            <div class="col-lg-7">
+                              <input class="form-control" type="text" class="card-number">
+                            </div>
+                          </div>
+
+                          <div class="row mt-4">
+                            <div style="font-size:12px;" class="col-lg-5 mt-2">Expiration date</div>
+                            <div class="col-lg-7">
+                              <input style="font-size:12px;" class="form-control" type="date" class="">
+                            </div>
+                          </div>
+
+                          <div class="row mt-4">
+                            <div style="font-size:12px;" class="col-lg-5 mt-2">CVV</div>
+                            <div class="col-lg-7">
+                              <input style="font-size:12px;" class="form-control" type="number" class="">
+                            </div>
+                          </div>
+
+                          <div class="row mt-4">
+                            <div style="font-size:12px;" class="col-lg-5 mt-2">Amount</div>
+                            <div class="col-lg-7">
+                              <input style="font-size:12px;" class="form-control" type="number" class="">
+                            </div>
+                          </div>
+                          <div class="row my-4">
+                            <div class="col-md-12 text-center">
+                              <button type="submit" class="btn btn-sm btn-flat btn-primary">Cancel</button>
+                              <button type="submit" name="sendMessage"
+                                class="btn btn-sm btn-flat btn-success">Deposit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     <!-- <div class="col-md-12 mb-3">
@@ -217,7 +446,7 @@
                       </div>
                     </div> -->
 
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center mt-5">
                       <button type="submit" class="btn btn-sm btn-flat btn-warning">Cancel</button>
                       <button type="submit" name="sendMessage" class="btn btn-sm btn-flat btn-info">Book here</button>
                     </div>
@@ -253,9 +482,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
   <script type="text/javascript">
-    $(function(){
+    $(function () {
       //$("#navContact").addClass('active');
     });
   </script>
