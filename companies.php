@@ -87,7 +87,7 @@
                         </div>
                         <div class="card-body-d">
                           <p class="content-d color-text-a">
-                            Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                            For more information you can reach us on below infors
                           </p>
                           <div class="info-agents color-a">
                             <p>

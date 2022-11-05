@@ -34,7 +34,7 @@
         <div class="row">
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
-              <h1 class="title-single"><?= $fePro['rooms'];?> <?= $fePro['name'];?></h1>
+              <h1 class="title-single"> <?= $fePro['name'];?></h1>
               <span class="color-text-a"><?= $fePro['location'];?></span>
             </div>
           </div>
@@ -48,7 +48,7 @@
                   <a href="spaces">Space</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  <?= $fePro['rooms'];?> <?= $fePro['name'];?>
+                   <?= $fePro['name'];?>
                 </li>
               </ol>
             </nav>
@@ -85,9 +85,10 @@
                   <div class="card-header-c d-flex">
                     <div class="card-box-ico">
                       <span class="ion-money">$</span>
-                    </div>
+                  
                     <div class="card-title-c align-self-center">
-                      <h5 class="title-c"><?= $fePro['price'];?></h5>
+                      <h6 class="title-c"><?= $fePro['price'];?> per m <sup>2</sup></h6>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -124,7 +125,7 @@
                         <span>4</span>
                       </li> -->
                       <li class="d-flex justify-content-between">
-                        <strong>Room:</strong>
+                        <strong>flow:</strong>
                         <span><?= $fePro['rooms'];?></span>
                       </li>
                       <li class="d-flex justify-content-between">
@@ -209,29 +210,26 @@
             </div>
             <div class="row">
               <div class="col-md-6 col-lg-4">
-                <img src="admin/media/companies/<?= $fePro['thumbnail'];?>" alt="" class="img-fluid">
-              </div>
+              <img style="height:350px;" width="350px;" src="admin/media/spaceImages/<?= $fePro['thumnail'];?>" alt="">              </div>
               <div class="col-md-6 col-lg-4">
                 <div class="property-agent">
-                  <h4 class="title-agent"><?= $fePro['comName'];?></h4>
+                  <h4 class="title-agent"><?= $fePro['name'];?></h4>
                   <p class="color-text-a">
-                    Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                    dui. Quisque velit nisi,
-                    pretium ut lacinia in, elementum id enim.
+                  <?= $fePro['descriptions'];?>
                   </p>
                   <ul class="list-unstyled">
                     <li class="d-flex justify-content-between">
                       <strong>Location</strong>
-                      <span class="color-text-a"><?= $fePro['comLocation'];?></span>
+                      <span class="color-text-a"><?= $fePro['location'];?></span>
                     </li>
                     <li class="d-flex justify-content-between">
                       <strong>Mobile:</strong>
-                      <span class="color-text-a"><?= $fePro['comPhone'];?></span>
+                      <span class="color-text-a"><?= $fePro['contact'];?></span>
                     </li>
-                    <li class="d-flex justify-content-between">
+                    <!-- <li class="d-flex justify-content-between">
                       <strong>Email:</strong>
-                      <span class="color-text-a"><?= $fePro['comEmail'];?></span>
-                    </li>
+                      <span class="color-text-a"><?= $fePro ['comEmail'];?></span>
+                    </li> -->
                     <li class="d-flex justify-content-between">
                       <strong>Skype:</strong>
                       <span class="color-text-a">skype</span>

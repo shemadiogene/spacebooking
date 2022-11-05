@@ -108,7 +108,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="">&copy SpaceCo | Rwanda</a></a>
+          <a href="">&copy SpaceBsooking | Rwanda</a></a>
         </div>
         <div class="footer-right">
         </div>

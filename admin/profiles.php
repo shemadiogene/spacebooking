@@ -400,7 +400,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="localhost/spaceco">SPACECO</a></a>
+          <a href="localhost/spaceco">SpaceBooking</a></a>
         </div>
         <div class="footer-right">
         </div>

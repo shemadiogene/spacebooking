@@ -202,7 +202,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          <a href="">&copy Uratengamaye Kivu Ltd | Rwanda</a></a>
+          <a href="">&copy SpaceBooking | Rwanda</a></a>
         </div>
         <div class="footer-right">
         </div>

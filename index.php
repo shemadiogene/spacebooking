@@ -29,7 +29,7 @@
             // if (mysqli_num_rows($ch)>0) {
             //   while ($intro = mysqli_fetch_array($ch)) {
           ?>
-            <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/about1.jpg)">
+            <div class="carousel-item-a intro-item bg-image" style="background-image: url(assets/img/backgra.jpg)">
               <div class="overlay overlay-a"></div>
               <div class="intro-content display-table">
                 <div class="table-cell">
@@ -37,13 +37,13 @@
                     <div class="row">
                       <div class="col-lg-8">
                         <div class="intro-body">
-                          <p class="intro-title-top"><?php //$intro['location'];?>Rwandan Deserved the Best
+                          <p class="intro-title-top"><?php //$intro['location'];?>Rwandan Deserve The Bests
                             <!-- <br> KG Paul VI</p> -->
                           <h2 class="intro-title mb-4">
                             <span class="color-b"><?php //$intro['rooms'];?> </span><?php //$intro['name'];?>Find space of desire
                             <!-- <br>Paul VI</h2> -->
                           <p class="intro-subtitle intro-price">
-                            <a href="#"><span class="price-a"><?php //$intro['status'];?>Find your | Affordable <?php //$intro['price'];?></span></a>
+                            <a href="spaces.php"><span class="price-a"><?php //$intro['status'];?>Find your | Affordable <?php //$intro['price'];?></span></a>
                           </p>
                         </div>
                       </div>
@@ -83,9 +83,7 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  we have beautiful spaces to buy
                 </p>
               </div>
               <div class="card-footer-c">
@@ -103,14 +101,12 @@
               <div class="card-header-c d-flex">
                 
                 <div class="card-title-c align-self-center">
-                  <h2 class="title-c">Lend Spaces</h2>
+                  <h2 class="title-c">Rent Spaces</h2>
                 </div>
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Praesent sapien massa,
-                  convallis a pellentesque
-                  nec, egestas non nisi.
+                  we have affordable spaces to lend for your business
                 </p>
               </div>
               <div class="card-footer-c">
@@ -163,7 +159,7 @@
                           </div>
                           <div class="card-body-a">
                             <div class="price-box d-flex">
-                              <span class="price-a"><?= $row['status']?> | <?= $row['price']?></span>
+                              <span class="price-a"><?= $row['status']?> | $<?= $row['price']?></span>
                             </div>
                             <a href="property-single?identification=<?= rand().uniqid()."!".$row['id']."!".rand().uniqid().rand();?>" class="link-a">Click here to view
                               <span class="ion-ios-arrow-forward"></span>
@@ -183,7 +179,8 @@
                               </li>
                               <li>
                                 <h4 class="card-info-title">Price</h4>
-                                <span><?= $row['price'];?></span>
+                                <span>$<?= $row['price'];?> per m
+                                  <sup>2</sup></span>
                               </li>
                             </ul>
                           </div>
@@ -240,11 +237,11 @@
                           </div>
                           <div class="card-body-d">
                             <p class="content-d color-text-a">
-                              Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
+                          For more information you can reach us on below infos
                             </p>
                             <div class="info-agents color-a">
                               <p>
-                                <strong>Phone: </strong> <?= $companies['comPhone'];?></p>
+                                <strong>Phone: </strong>+250<?= $companies['comPhone'];?></p>
                               <p>
                                 <strong>Email: </strong>  <?= $companies['comEmail'];?></p>
                             </div>

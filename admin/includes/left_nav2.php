@@ -3,7 +3,7 @@
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
         <a href="dashboardCompany">  <span
-            class="logo-name">SCO</span>
+            class="logo-name">SpaceBooking</span>
             <!-- <img alt="image" src="assets/img/logo.png" class="header-logo" /> -->
         </a>
       </div>
@@ -29,6 +29,7 @@
           <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="map"></i><span>For rent</span></a>
           <ul class="dropdown-menu">
             <li id="spaceRent1"><a href="bookedRentSpaces">Bookings</a></li>
+            <li id="spaceRent1"><a href="bookedRentSpaces">canceled Bookings</a></li>
             <li id="spaceRent2"><a href="confirmed">Confirmed Rent</a></li>
             <li id="spaceRent3"><a href="comRents">All Rents</a></li>
           </ul>
@@ -38,6 +39,7 @@
           <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="map"></i><span>For sale</span></a>
           <ul class="dropdown-menu">
             <li id="bLink1"><a href="bookedSales">Bookings</a></li>
+            <li id="bLink1"><a href="bookedSales">canceled Bookings</a></li>
             <li id="bLink2"><a href="confirmedSales">Confirmed sales</a></li>
             <li id="bLink3"><a href="comSales">All Sales</a></li>
                             

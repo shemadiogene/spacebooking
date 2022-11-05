@@ -448,7 +448,9 @@
 
                     <div class="col-md-12 text-center mt-5">
                       <button type="submit" class="btn btn-sm btn-flat btn-warning">Cancel</button>
-                      <button type="submit" name="sendMessage" class="btn btn-sm btn-flat btn-info">Book here</button>
+                      <button type="submit" name="sendMessage" class="btn btn-sm btn-flat btn-info">Continue</button>
+                      <button type="submit" name="myBookings" class="btn btn-sm btn-flat btn-info">MY BOOKINGS</button>
+
                     </div>
                   </div>
                 </form>

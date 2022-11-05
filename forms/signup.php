@@ -51,7 +51,7 @@ if (isset($_POST['save'])) {
     function sendsms($names, $phone){
 
         $receiver=$phone;
-        $sender="+250788890071";
+        $sender="+250789223264";
         $mssg="Hello ".$names."You are welcome, Thanks for signing up at space company";
 
         $data=array(
@@ -62,8 +62,8 @@ if (isset($_POST['save'])) {
 
         $url="https://www.intouchsms.co.rw/api/sendsms/.json";
         $data=http_build_query($data);
-        $username="renemucyo";
-        $password="mucyo12345";
+        $username="bigwi";
+        $password="bigwi@2617";
 
         $ch=curl_init();
         curl_setopt($ch,CURLOPT_URL,$url);

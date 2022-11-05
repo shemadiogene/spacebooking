@@ -2,7 +2,7 @@
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
       <a href="index"> <span
-          class="logo-name">Spaceco</span>
+          class="logo-name">SpaceBooking</span>
           <!-- <img alt="image" src="assets/img/logo.png" class="header-logo" /> -->
       </a>
     </div>
@@ -30,6 +30,8 @@
         <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shopping-bag"></i><span>For rent</span></a>
         <ul class="dropdown-menu">
           <li id="spaceRent1"><a class="nav-link" href="allRentBookings">Bookings</a></li>
+          <li id="spaceRent1"><a class="nav-link" href="allRentBookings">Canceled Bookings</a></li>
+
           <li id="spaceRent2"><a href="confirmedRentsAdmin">Confirmed Rents Bookings</a></li>
           <li id="spaceRent3"><a href="listOfRents">View all Rents spaces</a></li>
         </ul>
@@ -39,6 +41,8 @@
         <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="package"></i><span>For sale</span></a>
         <ul class="dropdown-menu">
           <li id="spaceRent4"><a href="allSalesBookings">Bookings</a></li>
+          <li id="spaceRent4"><a href="allSalesBookings">Canceled Bookings</a></li>
+          
           <li id="spaceRent5"><a href="confirmedSalesBooking">Confirmed Sales Bookings</a></li>
           <li id="spaceRent6"><a href="allSalesSpace">View all Sales Spaces</a></li>
           
